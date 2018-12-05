@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	width: 100%;
+	height:200vh;
+	
+	
+}
+table{
+	border:1px solid black;
+	text-align: center;
+}
+#head{
+	width: 100%;
+	height: 30vh;
+  font-size: 3em;
+  font-family: tacoma;
+  text-align: center;
+  color: purple;
+  background color: light yellow;  
+
+}
+#start input{
+	width: 9%;
+	height: 1  vh;
+    font-size: 1.3em;
+    text-align: center;
+    color: red;
+    padding: 7px;
+}
+
+#one input{
+	width:9%;
+	height:10%;
+	padding: 10px;
+	color: red;
+	font-size:
+	margin-left:1%;
+}
+#two input{
+	width:9%;
+	height:10%;
+	padding: 10px;
+	color: red;
+}
+#three input{
+	width:9%;
+	height:10%;
+	padding: 10px;
+	color: red;
+}
+#four input{
+	width:9%;
+	height:10%;
+	padding: 10px;
+	color: red;
+}
+#five input{
+	width:9%;
+	height:10%;
+	padding: 10px;
+	color: red;
+}
+#six input{
+	width:9%;
+	height:10%;
+	padding: 10px;
+	color: red;
+}
+#side{
+	width: 27%;
+	height: 55vh;
+	background-color:white;
+	border-radius: 2%; 
+	margin-left:68%;
+	margin-top:-40%;
+}
+span img{
+	width:7%;
+	height:10vh;
+	margin-left: 2%;
+	text-align: center;
+}
+img{
+	width: 40%;
+	
+	
+	
+}
+input{
+	text-align: center;
+}
+#side img{
+	margin: 25% 25%;
+	width: 60%;
+}
