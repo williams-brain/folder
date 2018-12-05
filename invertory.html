@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>invertory system</title>
+	<link rel="stylesheet" type="text/css" href="invertory.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/my-styles.css">
+</head>
+<body>
+	<div id="head">WILLIAMS STORE</div>
+	<div id="start">
+	<input type="text" name="" value="Product" disabled="">
+	<input type="text" name="" value="Name" disabled="">
+	<input type="text" name="" value="Q.A" disabled="">
+	<input type="text" name="" value="U.P" disabled="">
+	<input type="text" name="" value="Order" disabled="">
+	<input type="text" name="" value="total" disabled="">
+	
+	</div>
+	
+	
+
+<div id="one">
+	<span><img src="phn.jpg" style="width: 5%; height: 10%;" onmouseover="view1()" onmouseout="mou()" autofor ></span>
+	<input type="text" name="" value="INSECTICIDES" align="center" disabled="">
+	<input type="text" name="" value="40" id="item1" disabled="">
+	<input type="text" name="" value="1000" disabled="">
+	<input type="text" name="" id="input1" onfocusout="forItemOne()" value="" >
+	<input type="text" name="" id="total1"  value="0" disabled="">	
+</div>
+<div id="two">
+	<span><img src="mod.jpg" align="center" style="width: 5%; height: 10%; " onmouseover="view2()" onmouseout="mou1()"></span>
+	<input type="text" name="" value="MEN'S PERFUME" disabled="">
+	<input type="text" name=""  id="item2" value="30" disabled="">
+	<input type="text" name="" value="2000" disabled="">
+	<input type="text" name="" id="input2"onfocusout="forItemOne()" value="" >
+	<input type="text" name="" id="total2" value="0" disabled="">	
+</div>
+<div id="three">
+     <span><img src="chn.jpg" style="width: 5%; height: 10%;" onmouseover="view3()" onmouseout="mou2()" ></span>
+	<input type="text" name="" value="SOFT DRINKS" align="center" disabled="">
+	<input type="text" name="" id="item3" value="20" disabled="">
+	<input type="text" name="" value="800" disabled="">
+	<input type="text" name="" id="input3"  onfocusout="forItemOne()" value="" >
+	<input type="text" name="" id="total3" value="0" disabled="">	
+</div>
+<div id="four">
+	 <span><img src="cold.jpg" style="width: 5%; height: 10%;" align="center" onmouseover="view4()" onmouseout="mou3()" ></span>
+	<input type="text" name="" value="NIG PAMPERS" disabled="">
+	<input type="text" name="" id="item4" value="50" disabled="">
+	<input type="text" name="" value="400" disabled="">
+	<input type="text" name="" id="input4" onfocusout="forItemOne()" value="" >
+	<input type="text" name="" id="total4" value="0" disabled="">	
+</div>
+<div id="five">
+	<span><img src="meo.jpg" style="width: 5%; height: 10%;" align="center" onmouseover="view5()" onmouseout="mou4()" ></span>
+	<input type="text" name="" value="COCO BALLS" disabled="">
+	<input type="text" name="" id="item5" value="100" disabled="">
+	<input type="text" name="" value="300" disabled="">
+	<input type="text" name="" id="input5" onfocusout="forItemOne()" value="" >
+	<input type="text" name="" id="total5" value="0" disabled="">	
+</div>
+<div id="six">
+	<span><img src="tit.jpg" style="width: 5%; height: 10%; " align="center" onmouseover="view6()" onmouseout="mou5()" ></span>
+	<input type="text" name="" value="BISCUIT" disabled="">
+	<input type="text" name="" id="item6" value="70" disabled="">
+	<input type="text" name="" value="500" disabled="">
+	<input type="text" name="" id="input6" onfocusout="forItemOne()" value="" >
+	<input type="text" name="" id="total6" value="0" disabled="">	
+</div>
+<div id="side">
+</div>
+</div>
+</body>
+
+<script>
+	var inputOne=0;
+	var total1One=0;
+
+	var input3Two=0;
+	var totalTwo=0;
+
+	var inputThree=0;
+	var totalThree=0;
+
+	var inputFour=0;
+	var totalFour=0;
+
+	var inputFive=0;
+	var totalFive=0;
+
+	var inputSix=0;
+	var totalSix=0;
+
+
+	function forItemOne() {
+		inputOne = input1.value;
+		total1.value = inputOne * 1000; 
+		item1.value= item1.value - inputOne;
+			if(inputOne >= 40){
+				item1.value="out of stock"
+				total1.value="out of stock"
+			}
+			if(inputOne==0){
+				item1.value= 40;
+			}
+
+
+
+		inputTwo = input2.value;
+		total2.value = inputTwo * 2000;
+		item2.value= item2.value - inputTwo;
+		if(inputTwo >= 30){
+				item2.value="out of stock"
+				total2.value="out of stock"
+			}
+			if(inputTwo==0){
+				item2.value= 30; 
+			}
+
+		inputThree = input3.value;
+		total3.value = inputThree * 800;
+		item3.value= item3.value - inputThree;
+		if(inputThree >= 20){
+				item3.value="out of stock"
+				total3.value="out of stock"
+			}
+			if(inputThree==0){
+				item3.value= 20; 
+			}
+
+
+		inputFour = input4.value;
+		total4.value = inputFour * 400;
+		item4.value = item4.value - inputFour;
+		if(inputFour >= 50){
+				item4.value="out of stock"
+				total4.value="out of stock"
+			}
+			if(inputTwo==0){
+				item2.value= 50; 
+			} 
+
+		inputFive = input5.value;
+		total5.value = inputFive * 300;
+		item5.value = item5.value - inputFive;
+		if(inputFive >= 100){
+				item5.value="out of stock"
+				total5.value="out of stock"
+			}
+			if(inputTwo==0){
+				item2.value= 100; 
+			} 
+ 
+
+
+		inputSix = input6.value;
+		total6.value = inputSix * 500; 
+		item6.value = item6.value - inputSix;
+		if(inputSix >= 70){
+				item6.value="out of stock"
+				total6.value="out of stock"
+			}
+			if(inputSix==0){
+				item6.value= 70; 
+			} 
+ 
+	}
+
+function view1(){
+		side.innerHTML="<img src='phn.jpg'>";
+}
+
+
+
+function mou(){
+	side.innerHTML="";
+}
+
+function view2(){
+		side.innerHTML="<img src='mod.jpg'>";
+}
+
+
+
+function mou1(){
+	side.innerHTML="";
+}
+function view3(){
+		side.innerHTML="<img src='chn.jpg'>";
+}
+
+
+
+function mou2(){
+	side.innerHTML="";
+}
+function view4(){
+		side.innerHTML="<img src=' cold.jpg'>";
+}
+
+
+
+function mou3(){
+	side.innerHTML="";
+}
+
+function view5(){
+		side.innerHTML="<img src='meo.jpg'>";
+}
+
+
+
+function mou4(){
+	side.innerHTML="<>";
+}
+function view6(){
+		side.innerHTML="<img src='tit.jpg'>";
+}
+
+
+
+function mou5(){
+	side.innerHTML="<>";
+}
+
+</script>
+</html> 
